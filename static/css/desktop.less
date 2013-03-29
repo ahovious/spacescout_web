@@ -6,7 +6,6 @@
 @grey_border: #d6d6d6;
 @grey_background: #e5e5e5;
 
-
 // retina.less
 // A helper mixin for applying high-resolution background images (http://www.retinajs.com)
 
@@ -29,6 +28,7 @@
 
 
     .logo-container { background-color: transparent;
+
 
         .logo { height: 80px; line-height: 80px; width: 284px; position: relative;
             .at2x('/static/img/space_finder_logo.png', 239px, 80px);
@@ -69,7 +69,7 @@
 
         h4 { border: none; padding-top: 0;}
 
-        .inner-column { width: 50%; float: left;
+        .inner-column { width: 33.3%; float: left;
             .inner-block-left { padding-right: 20px; }
             .inner-block-right { padding-left: 20px; }
         }
@@ -223,18 +223,17 @@
             }
 
             li.selected { background: #6160a2 url('/static/img/list_item_selected.png') bottom repeat-x;
-                .space-detail-type { color: #ccc; }
+                .space-detail-type { color: #eee; }
+                .space-detail-type-label, .space-detail-capacity { color: #eee; }
                 .space-detail-desc,.space-detail-name { color: #fff; }
             }
         }
     }
 }
 
-#footer { 
-	/*margin: 15px 0 0 0;*/
+#footer { margin: 15px 0 0 0;
     .copyright { width: 32%; }
     .partners { width: 58%; margin-left: 25px; }
-	.logo {margin: 10px;}
 }
 
 .back-top { display: none; }

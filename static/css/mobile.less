@@ -1,12 +1,11 @@
 /* Less Variables */
 
-@purple_text: #4c497e;
-@grey_light: #b2b2b2;
-@grey_dark: #4d4d4d;
+@purple_text: #2919ae; /* #4c497e; used for space detail links and filter headers */
+@grey_light: #666; /* #b2b2b2;  used for space detail small print, capacity, and filter headers */
+@grey_dark: #222; /* #4d4d4d; used for light text in multiple locations */
 @grey_border: #d6d6d6;
 @grey_background: #e5e5e5;
 @grey_medium: #aaa;
-@uofi_blue_background: #1c3764; 
 
 // retina.less
 // A helper mixin for applying high-resolution background images (http://www.retinajs.com)
@@ -46,7 +45,8 @@ button {
     .logo-container { background-color: #ccc;
 
         .logo { height: 75px; line-height: 70px; width: 200px; float:left; position: relative;
-            .at2x('/static/img/space_finder_logo_mobile.png', 179px, 60px);
+
+            .at2x('/static/img/space_finder_logo_mobile.png', 189px, 60px);
             background-repeat: no-repeat;
             background-position: 10px 50%;
 
@@ -78,20 +78,20 @@ button {
                 li { display: inline-block; background-color: #eee; padding: 2px 5px; margin-bottom: 4px; font-size: 11px; }
             }
         }
-        .bubble-info { width: 50px; height:32px; background: #e5e5e5 url('/static/img/spinner.gif') no-repeat 50% 50%; background-size: 15px;
-            .count { display: block; padding: 4px; text-align: center; font-weight: bold; color: @purple_text; font-size: 20px; margin-top: 1px; background-color: #e5e5e5; }
-            .spaces { display: block; text-align: center; font-size: 11px; text-transform: uppercase; color: @grey_light; background-color: #e5e5e5; }
+        .bubble-info { width: 50px; height:32px; background: @grey_background url('/static/img/spinner.gif') no-repeat 50% 50%; background-size: 15px;
+            .count { display: block; padding: 4px; text-align: center; font-weight: bold; color: @purple_text; font-size: 20px; margin-top: 1px; background-color: @grey_background; }
+            .spaces { display: block; text-align: center; font-size: 11px; text-transform: uppercase; color: @grey_light; background-color: @grey_background; }
         }
     }
 
     .actions { width: auto; float: right; text-align: right; height: 50px;  margin: 5px 10px 5px 0;
-    .bubble-info { width: 84px; height:32px; background: #e5e5e5 url('/static/img/spinner.gif') no-repeat 50% 50%; background-size: 15px;
-            .count { display: block; padding: 0px; text-align: center; font-weight: bold; color: @purple_text; font-size: 20px; margin-top: 1px; background-color: #e5e5e5; line-height: 20px; }
-            .spaces { display: block; text-align: center; font-size: 10px; text-transform: uppercase; color: @grey_light; background-color: #e5e5e5; line-height: 10px; }
+    .bubble-info { width: 84px; height:32px; background: @grey_background url('/static/img/spinner.gif') no-repeat 50% 50%; background-size: 15px;
+            .count { display: block; padding: 0px; text-align: center; font-weight: bold; color: @purple_text; font-size: 20px; margin-top: 1px; background-color: @grey_background; line-height: 20px; }
+            .spaces { display: block; text-align: center; font-size: 10px; text-transform: uppercase; color: @grey_light; background-color: @grey_background; line-height: 10px; }
         }
 
 
-        #filter_button { background:#514d83; .at2x('/static/img/down.png', 16px, 9px);  background-repeat:no-repeat; background-position: 8px 50%; display:inline-block; color: #fff; width: 30px; text-indent: -999px;
+        #filter_button { background:#514d83; .at2x('/static/img/down.png', 16px, 9px);  background-repeat:no-repeat; background-position: 8px 50%; display:inline-block; color: #8987ab; width: 30px; text-indent: -999px;
 
           }
         #done-clear-group { display:none;}
@@ -115,9 +115,9 @@ button {
                 li { display: inline-block; background-color: #eee; padding: 2px 5px; margin-bottom: 4px; font-size: 11px; }
             }
         }
-        .bubble-info { width: 50px; height:32px; background: #e5e5e5 url('/static/img/spinner.gif') no-repeat 50% 50%; background-size: 15px;
-            .count { display: block; padding: 4px; text-align: center; font-weight: bold; color: @purple_text; font-size: 20px; margin-top: 1px; background-color: #e5e5e5; }
-            .spaces { display: block; text-align: center; font-size: 11px; text-transform: uppercase; color: @grey_light; background-color: #e5e5e5; }
+        .bubble-info { width: 50px; height:32px; background: @grey_background url('/static/img/spinner.gif') no-repeat 50% 50%; background-size: 15px;
+            .count { display: block; padding: 4px; text-align: center; font-weight: bold; color: @purple_text; font-size: 20px; margin-top: 1px; background-color: @grey_background; }
+            .spaces { display: block; text-align: center; font-size: 11px; text-transform: uppercase; color: @grey_light; background-color: @grey_background; }
         }
     }
 
@@ -349,13 +349,11 @@ button {
 
 
 
-#footer { margin: 15px 10px 10px 10px; font-size: 11px; line-height: 14px; 
+#footer { margin: 15px 10px 10px 10px; font-size: 11px; line-height: 14px;
 
-
-    .copyright { margin-left: 45px; margin-bottom: 10px; font-size: .5em;}
+    .logo { margin: 10px; }
+    .copyright { margin-left: 45px; margin-bottom: 10px; }
     .partners { margin-left: 45px; color: #aaa; }
-	.logo {margin: 10px;}
-	
 }
 
 .loading {
