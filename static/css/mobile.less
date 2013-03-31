@@ -6,6 +6,7 @@
 @grey_border: #d6d6d6;
 @grey_background: #e5e5e5;
 @grey_medium: #aaa;
+@uofi_blue_background: #1c3764; 
 
 // retina.less
 // A helper mixin for applying high-resolution background images (http://www.retinajs.com)
@@ -91,11 +92,11 @@ button {
         }
 
 
-        #filter_button { background:#514d83; .at2x('/static/img/down.png', 16px, 9px);  background-repeat:no-repeat; background-position: 8px 50%; display:inline-block; color: #8987ab; width: 30px; text-indent: -999px;
+        #filter_button { background:#2919ae; .at2x('/static/img/down.png', 16px, 9px);  background-repeat:no-repeat; background-position: 8px 50%; display:inline-block; color: #fff; width: 30px; text-indent: -999px;
 
           }
         #done-clear-group { display:none;}
-        #view_results_button { background:#514d83; .at2x('/static/img/check.png', 13px, 9px); background-repeat: no-repeat; background-position: 10px 50%; display: none; color: #8987ab; width: 30px; text-indent: -999px;  margin-bottom: 5px;}
+        #view_results_button { background:#2919ae; .at2x('/static/img/check.png', 13px, 9px); background-repeat: no-repeat; background-position: 10px 50%; display: none; color: #fff; width: 30px; text-indent: -999px;  margin-bottom: 5px;}
         #cancel_results_button { background: #e4e4e4;  .at2x('/static/img/cross.png', 8px, 9px); background-repeat:no-repeat; background-position: 10px 50%; display: none; color: #646464; width: 30px; text-indent: -999px; }
 
         #back_home_button { background:#514d83 url('/static/img/left.png') no-repeat 8px 50%; display:inline-block; color: #8987ab; width: 30px; text-indent: -999px; }
@@ -143,7 +144,7 @@ button {
 
         .selected { color: #fff; }
 
-        h4 { color: #8681b9; border-top: 1px dotted #aaa; margin: 0; font-size: 15px; line-height: 18px; padding-top: 10px; }
+        h4 { color: #8681b9; border-top: 1px dotted @grey_medium; margin: 0; font-size: 15px; line-height: 18px; padding-top: 10px; }
 
         h5 { color: #fff; font-size: 13px; line-height: 14px; margin: 0 0 5px 0;
             span { font-weight: normal; font-size: 12px; }
@@ -353,7 +354,7 @@ button {
 
     .logo { margin: 10px; }
     .copyright { margin-left: 45px; margin-bottom: 10px; }
-    .partners { margin-left: 45px; color: #aaa; }
+    .partners { margin-left: 45px; color: @grey_medium; }
 }
 
 .loading {
